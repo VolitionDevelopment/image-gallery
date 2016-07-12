@@ -28,4 +28,25 @@ $(document).ready(function(){
     }).mouseleave(function(){
         $(this).css('border-color', '#555')
     });
+
+    setInterval(function(){
+        var image = $('.image');
+        var index = parseInt(image.attr('src').substring(12, 13));
+        var next = index + 1;
+        var randhex = '#'+Math.floor(Math.random()*16777215).toString(16);
+
+        if(next == 6){
+            next = 1;
+        }
+
+        image.fadeOut('fast', function(){
+            image.attr('src', 'images/image' + next + '.jpg');
+        })
+            .fadeIn('fast')
+            .css('border-color', randhex);
+
+        $('#desc').fadeOut('fast', function(){
+            $('#desc').text(titles[next - 1]);
+        }).fadeIn('fast');
+    }, 3000)
 });
