@@ -7,3 +7,7 @@
 - Descriptive text
 - Thumbnail enlarges upon hover
 - jQuery!
+
+
+###TODO
+- Add automated intelligence to find the images you want to see
