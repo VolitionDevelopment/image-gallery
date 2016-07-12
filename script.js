@@ -11,17 +11,25 @@ $(document).ready(function(){
         'Saturn\'s Rings'
     ];
 
+
+
     $('.block img').mouseenter(function(){
+        var randhex = '#'+Math.floor(Math.random()*16777215).toString(16);
         var index = $(this).attr('name').substring(5, 6);
 
+        $(this).css('border-color', randhex);
         $('.image').fadeOut('fast', function(){
             $('.image').attr('src', 'images/image' + index + '.jpg');
-        }).fadeIn('fast');
+        })
+            .fadeIn('fast')
+            .css('border-color', randhex);
 
         $('#desc').fadeOut('fast', function(){
             $('#desc').text(titles[index - 1]);
         }).fadeIn('fast');
 
         console.log(index);
-    });
+    }).mouseleave(function(){
+        $(this).css('border-color', '#555');
+    })
 });

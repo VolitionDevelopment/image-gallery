@@ -13,7 +13,6 @@ body{
 }
 
 .block img:hover{
-    border: red solid 4px;
     width: 170px;
 }
 
@@ -26,4 +25,5 @@ body{
 .image{
     margin-top: 50px;
     width: 45%;
+    border: 4px solid;
 }
