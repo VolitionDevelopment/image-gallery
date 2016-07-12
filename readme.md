@@ -7,6 +7,8 @@
 - Descriptive text
 - Thumbnail enlarges upon hover
 - jQuery!
+- Automatically changes picture every 3 seconds
+- Sidebar view
 
 
 ###TODO
