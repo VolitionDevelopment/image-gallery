@@ -1,0 +1,29 @@
+body{
+    background-color: #222;
+    color: white;
+    font-family: Futura, serif;
+}
+
+.container{
+    text-align: center;
+}
+
+.block{
+    display: inline-block;
+}
+
+.block img:hover{
+    border: red solid 4px;
+    width: 170px;
+}
+
+.block img{ 
+    border: 4px solid #555;
+    transition: width 0.5s, height 0.5s, border-color 0.5s, transform 0.5s;
+    width: 150px;
+}
+
+.image{
+    margin-top: 50px;
+    width: 45%;
+}
